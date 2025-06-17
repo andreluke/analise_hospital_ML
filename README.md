@@ -1,33 +1,77 @@
+# 📈 Análise de Dados Hospitalares - Aprendizagem de Máquina
 
-# Atividade de 'Aprendizagem de Máquina' - Análise de Dados Hospitalares
-### Instruções
-Considerando o conjunto de dados hospital apresentado na primeira aula (ver arquivo em anexo):
+Projeto da disciplina de **Aprendizagem de Máquina** focado em análise estatística de um conjunto de dados hospitalares.
 
-1. Calcular, para cada coluna desse conjunto de dados, as estatísticas univariadas pertinentes dentre frequências, moda, média, mediana, desvio-padrão, Q1, Q3, obliquidade e curtose.
-2. Calcular estatísticas multivariadas de covariância e correção para os atributos quantitativos presentes.
-3. Plotar boxplots dos atributos pertinentes e identificar a presença ou não de outliers.
-4. Plotar histogramas dos atributos e interpretar sua distribuição, considerando as classes.
+---
 
-Recomenda-se o uso da linguagem Python e das biblioteca pandas, numpy e matplotlib para realização dos exercícios, mas não é obrigatório.
+## 🌟 Objetivo
 
+Realizar uma análise exploratória dos dados, extraindo estatísticas descritivas, medidas de correlação, além de identificar padrões e possíveis outliers por meio de visualizações gráficas.
 
-## Resumo
-Este projeto realiza análise estatística de um conjunto de dados hospitalares usando Python. Inclui estatísticas descritivas, correlações, boxplots e histogramas com base no arquivo `hospital.xlsx`.
+O conjunto de dados utilizado é o **`hospital.xlsx`**, fornecido na primeira aula.
+
+---
+
+## 📋 Atividades Propostas
+
+1. **Estatísticas Univariadas**
+   Para cada coluna do conjunto de dados:
+
+   * Frequências
+   * Moda
+   * Média
+   * Mediana
+   * Desvio-padrão
+   * Quartis (Q1, Q3)
+   * Obliquidade (Skewness)
+   * Curtose (Kurtosis)
+
+2. **Estatísticas Multivariadas**
+
+   * Cálculo da matriz de covariância
+   * Cálculo da matriz de correlação
+     *(Aplicável aos atributos quantitativos)*
+
+3. **Análise de Outliers**
+
+   * Geração de **boxplots** para os atributos pertinentes
+   * Identificação visual de outliers
+
+4. **Distribuição de Dados**
+
+   * Geração de **histogramas** dos atributos
+   * Interpretação das distribuições considerando as classes (ex.: diagnóstico)
+
+---
+
+## 🛠️ Tecnologias Recomendadas
+
+* Python 3.8+
+* Bibliotecas:
+
+  * `pandas`
+  * `numpy`
+  * `matplotlib`
+
+---
 
 ## ✅ Pré-requisitos
 
-- Python 3.8+
-- Git
----
-## ⚙️ Passos para rodar o projeto
+* Ter o Python instalado
+* Git (opcional, caso queira clonar o repositório)
 
-### 1. Clone o repositório (ou baixe os arquivos)
+---
+
+## 🚀 Como Executar o Projeto
+
+### 1. Clone o repositório ou baixe os arquivos
+
 ```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
-````
+```
 
-### 2. Crie o ambiente virtual
+### 2. Crie o ambiente virtual (recomendado)
 
 ```bash
 python -m venv .venv
@@ -53,30 +97,32 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 5. Coloque o arquivo `hospital.xlsx` na mesma pasta do script
+### 5. Adicione o arquivo de dados
+
+Coloque o arquivo **`hospital.xlsx`** na raiz do projeto (mesma pasta do script).
 
 ### 6. Execute a análise
 
 ```bash
-python app.py
+python analise_hospital.py
 ```
 
 ---
 
-## 📊 Resultado
+## 📊 Resultados Esperados
 
-O script exibirá:
+Ao rodar o script, o programa irá gerar:
 
 * Estatísticas descritivas (média, mediana, moda, etc.)
-* Matriz de covariância e correlação
-* Boxplots para identificar outliers
-* Histogramas separados por diagnóstico
+* Matrizes de **covariância** e **correlação**
+* **Boxplots** para visualização de outliers
+* **Histogramas** por classe (ex.: por diagnóstico)
 
 ---
 
 ## 📁 Estrutura do Projeto
 
-```
+``` bash
 .
 ├── .gitignore
 ├── README.md
@@ -84,3 +130,9 @@ O script exibirá:
 ├── hospital.xlsx
 └── analise_hospital.py
 ```
+
+---
+
+## 📌 Observações Finais
+
+> Este projeto é de caráter educacional e tem como foco a prática de técnicas de análise de dados, estatística descritiva e visualização com Python.
